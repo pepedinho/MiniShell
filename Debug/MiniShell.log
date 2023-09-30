@@ -1,0 +1,7 @@
+﻿  commandes.c
+C:\Users\33766\source\repos\MiniShell\commandes.h(3,15): error C2143: erreur de syntaxe : absence de ')' avant '*'
+C:\Users\33766\source\repos\MiniShell\commandes.h(3,15): error C2143: erreur de syntaxe : absence de '{' avant '*'
+C:\Users\33766\source\repos\MiniShell\commandes.h(3,23): error C2059: erreur de syntaxe : ')'
+  main.c
+C:\Users\33766\source\repos\MiniShell\main.c(34,16): warning C4133: '=' : types incompatibles - de 'char *' à 'wchar_t *'
+  Génération de code en cours...
