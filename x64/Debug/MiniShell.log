@@ -1,9 +1,9 @@
 ﻿  commandes.c
-C:\Users\33766\source\repos\MiniShell\commandes.c(48,51): warning C4133: 'fonction' : types incompatibles - de 'wchar_t *' à 'LPCCH'
-C:\Users\33766\source\repos\MiniShell\commandes.c(79,11): warning C4133: 'fonction' : types incompatibles - de 'char [45]' à 'const wchar_t *const '
+C:\Users\33766\source\repos\MiniShell\commandes.c(53,51): warning C4133: 'fonction' : types incompatibles - de 'wchar_t *' à 'LPCCH'
+C:\Users\33766\source\repos\MiniShell\commandes.c(84,11): warning C4133: 'fonction' : types incompatibles - de 'char [45]' à 'const wchar_t *const '
   main.c
 C:\Users\33766\source\repos\MiniShell\main.c(35,16): warning C4133: '=' : types incompatibles - de 'char *' à 'wchar_t *'
-C:\Users\33766\source\repos\MiniShell\main.c(58,55): warning C4133: 'fonction' : types incompatibles - de 'wchar_t *' à 'LPCCH'
-C:\Users\33766\source\repos\MiniShell\main.c(64,44): warning C4133: 'fonction' : types incompatibles - de 'wchar_t *' à 'LPCCH'
+C:\Users\33766\source\repos\MiniShell\main.c(62,55): warning C4133: 'fonction' : types incompatibles - de 'wchar_t *' à 'LPCCH'
+C:\Users\33766\source\repos\MiniShell\main.c(68,44): warning C4133: 'fonction' : types incompatibles - de 'wchar_t *' à 'LPCCH'
   Génération de code en cours...
   MiniShell.vcxproj -> C:\Users\33766\source\repos\MiniShell\x64\Debug\MiniShell.exe

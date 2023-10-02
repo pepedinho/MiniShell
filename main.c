@@ -48,6 +48,10 @@ int main(int argc, char* argv[])
 					{
 						cls();
 					}
+					else if (strcmp(command, "help") == 0)
+					{
+						help();
+					}
 					else if (strcmp(command, "cd") == 0)
 					{
 						printf("Commande 'cd' mal formulée. Utilisation : cd <nom_du_dossier>\n");
@@ -68,6 +72,20 @@ int main(int argc, char* argv[])
 									if (cd(arguments_w) != 0)
 									{
 										perror("Erreur lors du changement de repertoire");
+									}
+								}
+								else if (strcmp(command, "cat") == 0)
+								{
+									if (cat(arguments_w) != 0)
+									{
+										perror("Erreur lors de l'ouverture du fichier");
+									}
+								}
+								else if (strcmp(command, "run") == 0)
+								{
+									if (start(arguments_w) != 0)
+									{
+										perror("Erreur lors de l'execution du fichier");
 									}
 								}
 							}

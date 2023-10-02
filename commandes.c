@@ -1,7 +1,7 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "commandes.h"
 #include <stdlib.h>
 #include <stdio.h>
-#define _CRT_SECURE_NO_WARNINGS
 #include <Windows.h>
 #include <string.h>
 #include <wchar.h>
@@ -39,6 +39,11 @@ void ls()
 void cls()
 {
 	system("cls");
+}
+
+void help()
+{
+	printf("\n-ls : indicate the files present in the directory.\n\n-cd <folder> : moves to the folder specified as argument.\n\n");
 }
 
 int cd(wchar_t* folder)
@@ -80,3 +85,44 @@ int cd(wchar_t* folder)
 		return 1;
 	}
 }
+
+int cat(const wchar_t* filename)
+{
+	FILE* fichier;
+
+	if (_wfopen_s(&fichier, filename, L"r") != 0)
+	{
+		wprintf(L"Erreur lors de l'ouverture du fichier %ls\n", filename);
+		return 1;
+	}
+
+	wchar_t ligne[1024];
+	while (fgetws(ligne, sizeof(ligne) / sizeof(wchar_t), fichier) != NULL)
+	{
+		wprintf(L"%ls", ligne);
+	}
+
+	fclose(fichier);
+
+	return 0;
+}
+
+int start(wchar_t* file)
+{
+
+	wchar_t command[200];
+
+	
+	swprintf(command, 200, L"start %ls", file);
+
+
+	if (_wsystem(command) != 0)
+	{
+		fwprintf(stderr, L"Impossible de lancer la commande : %ls\n", command);
+		return 1;
+	}
+
+	return 0;
+
+}
+
